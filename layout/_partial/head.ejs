@@ -102,6 +102,7 @@ if ( is_archive() ) {
 <% } %>
 
 <% if (theme.baidu_tongji){ %>
+<<<<<<< HEAD
     <script>
         var _hmt = _hmt || [];
         (function() {
@@ -111,6 +112,13 @@ if ( is_archive() ) {
             s.parentNode.insertBefore(hm, s);
         })();
     </script>
+=======
+    <%- partial('head/baidu-tongji') -%>
+<% } %>
+
+<% if(theme.google_analytics){ %>
+  <%- partial('head/google-analytics') -%>
+>>>>>>> upstream-mirro
 <% } %>
 
 </head>
